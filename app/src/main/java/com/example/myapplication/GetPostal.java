@@ -12,10 +12,12 @@ import java.net.MalformedURLException;
 
 public class GetPostal {
     private static String postal = "";
+
         public static String getCode(double[] latlong) throws IOException {
-        String url = "http://open.mapquestapi.com/geocoding/v1/reverse?key=SAd4Ez053FHMazmKomIl1l87zIrtLmFO&location="+latlong[0]+","+latlong[1]+"&outFormat=xml&includeRoadMetadata=false&includeNearestIntersection=false\\r\\n"
+                    String url = "http://open.mapquestapi.com/geocoding/v1/reverse?key=SAd4Ez053FHMazmKomIl1l87zIrtLmFO&location="+latlong[0]+","+latlong[1]+"&outFormat=xml&includeRoadMetadata=false&includeNearestIntersection=false\\r\\n"
                 + "\r\n"
                 + "";
+
         readFromWeb(url);
         return postal;
     }
